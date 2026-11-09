@@ -1,0 +1,345 @@
+/* ==========================================
+   RYLEE GILLIES | HOUSE OF RÝMI
+   INTERIOR & SPATIAL DESIGN PORTFOLIO
+========================================== */
+
+
+/* ==========================================
+   1. COLOR PALETTE
+========================================== */
+
+:root {
+    --signature-red: #C8102E;
+    --powder-blue: #BFD5E5;
+    --sage-green: #A8B9A0;
+    --blush-pink: #E8C5CC;
+    --warm-beige: #E9DFD0;
+    --ivory: #F8F5EF;
+    --deep-olive: #59634F;
+    --charcoal: #302D2B;
+    --dusty-rose: #B77C87;
+
+    --bs-primary: #C8102E;
+    --bs-primary-rgb: 200, 16, 46;
+}
+
+
+/* ==========================================
+   2. GENERAL STYLING
+========================================== */
+
+body {
+    background-color: var(--ivory) !important;
+    color: var(--charcoal);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.8;
+}
+
+p {
+    color: var(--charcoal);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+
+/* ==========================================
+   3. TYPOGRAPHY
+========================================== */
+
+h1, h2, h3, h4, h5, h6,
+.section-heading {
+    font-family: 'Bodoni Moda', serif;
+    color: var(--charcoal);
+    font-weight: 500;
+}
+
+header.masthead .site-heading h1 {
+    font-family: 'Bodoni Moda', serif;
+    color: var(--signature-red) !important;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header.masthead .site-heading .subheading {
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+/* ==========================================
+   4. NAVIGATION
+========================================== */
+
+#mainNav {
+    background-color: var(--ivory) !important;
+    border-bottom: 1px solid var(--warm-beige);
+}
+
+#mainNav .navbar-brand {
+    color: var(--signature-red) !important;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#mainNav .navbar-nav .nav-link {
+    color: var(--charcoal) !important;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+#mainNav .navbar-nav .nav-link:hover,
+#mainNav .navbar-nav .nav-link:focus,
+#mainNav .navbar-nav .nav-link.active {
+    color: var(--signature-red) !important;
+}
+
+
+/* ==========================================
+   5. HERO SECTION
+========================================== */
+
+header.masthead {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+header.masthead::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(30, 27, 25, 0.30);
+}
+
+header.masthead .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ==========================================
+   6. BUTTONS
+========================================== */
+
+.btn-primary {
+    background-color: var(--signature-red) !important;
+    border-color: var(--signature-red) !important;
+    color: #FFFFFF !important;
+    border-radius: 0;
+    padding: 12px 25px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--deep-olive) !important;
+    border-color: var(--deep-olive) !important;
+    color: #FFFFFF !important;
+}
+
+.btn-outline-dark {
+    border-radius: 0;
+    border-color: var(--charcoal);
+    color: var(--charcoal);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--signature-red);
+    border-color: var(--signature-red);
+    color: #FFFFFF;
+}
+
+
+/* ==========================================
+   7. SECTIONS
+========================================== */
+
+.section-heading {
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.container-fluid.py-5 {
+    background-color: var(--warm-beige);
+}
+
+
+/* ==========================================
+   8. FOOTER
+========================================== */
+
+footer {
+    background-color: var(--ivory);
+    border-top: 1px solid var(--warm-beige);
+}
+
+footer p {
+    color: var(--charcoal);
+}
+
+
+/* ==========================================
+   9. RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 991px) {
+    #mainNav {
+        background-color: var(--ivory) !important;
+    }
+
+    header.masthead .site-heading h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header.masthead .site-heading h1 {
+        font-size: 2.3rem;
+    }
+
+    .section-heading {
+        font-size: 1.8rem;
+    }
+}
+
+/* ==========================================
+   EDITORIAL HERO SECTION
+========================================== */
+
+.editorial-hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.editorial-hero::before {
+    background: rgba(30, 27, 25, 0.32);
+}
+
+.editorial-heading {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+/* Small introductory text */
+
+.hero-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Main title */
+
+/* HERO NAME - EDITORIAL MASTHEAD */
+
+.editorial-heading h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: clamp(5rem, 14vw, 15rem);
+    font-weight: 700;
+    color: #FFFFFF !important;
+    letter-spacing: -3px;
+    line-height: 0.95;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Subtitle */
+
+.editorial-heading .subheading {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Decorative divider */
+
+.hero-divider {
+    width: 65px;
+    height: 2px;
+    background-color: var(--signature-red);
+    margin: 30px auto;
+}
+
+/* Tagline */
+
+.hero-tagline {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 576px) {
+
+    .editorial-hero {
+        min-height: 550px;
+    }
+
+    .editorial-heading {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+    }
+
+    .editorial-heading .subheading {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+}
+
+
+/* ==========================================
+   PORTFOLIO PDF VIEWER
+========================================== */
+
+.portfolio-pdf {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: var(--warm-beige);
+    padding: 12px;
+}
+
+.portfolio-pdf iframe {
+    display: block;
+    width: 100%;
+    min-height: 600px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+@media (max-width: 576px) {
+    .portfolio-pdf iframe {
+        min-height: 450px;
+    }
+}
